@@ -1,0 +1,117 @@
+.create-game {
+	padding: 50px;
+	margin: 0 auto;
+	border: 2px solid #000;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+  &__button{
+    width: fit-content;
+    padding: 3px 12px;
+    background-color: #8e3ae2;
+    outline: none;
+    border: none;
+    color:#fff;
+
+    &:hover{
+      cursor: pointer;
+      background-color: #a261e4;
+    }
+  }
+
+	&__buttons {
+		display: flex;
+		gap: 25px;
+		justify-content: flex-start;
+    margin-top: 30px;
+
+		button {
+			background: #8e3ae2;
+			color: #fff;
+			width: auto;
+			border: none;
+			padding: 10px 24px;
+
+			&:hover {
+				cursor: pointer;
+				background-color: #a261e4;
+			}
+		}
+	}
+
+	&__button-main {
+		margin: auto;
+		background: #50da7f;
+		border-radius: 73px;
+		cursor: pointer;
+		font-size: 35px;
+		width: 100%;
+		outline: none;
+		border: none;
+		color: #fff;
+		font-family: 'Colus';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.03em;
+		width: auto;
+		padding: 19px 48px;
+		color: #030405;
+		margin-top: 15px;
+
+		&:hover {
+			background-color: #edb72b;
+		}
+	}
+
+	input {
+		padding: 9px 15px;
+		margin-top: 12px;
+		background: #ffffff;
+		border-radius: 23px;
+		width: 100%;
+		border: none;
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: 0.03em;
+		color: #5a5a5a;
+		box-sizing: border-box;
+		margin-bottom: 25px;
+
+		&:focus {
+			outline: none;
+			border: none;
+		}
+	}
+
+	select {
+		padding: 9px 15px;
+		appearance: none;
+		background-color: #fff;
+		border: none;
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: 0.03em;
+		color: #5a5a5a;
+		margin: 0;
+		width: 100%;
+		cursor: inherit;
+		line-height: inherit;
+		border-radius: 23px;
+		box-sizing: border-box;
+		background-image: url('../../../public/images/Vector.png');
+		background-repeat: no-repeat;
+		background-position-x: 98%;
+		background-position-y: center;
+		background-size: 12px 6px;
+
+		&:focus {
+			border-color: #aaa;
+			box-shadow: 0 0 1px 3px rgba(252, 162, 59, 0.7);
+			box-shadow: 0 0 0 3px -moz-mac-focusring;
+			outline: none;
+		}
+	}
+}

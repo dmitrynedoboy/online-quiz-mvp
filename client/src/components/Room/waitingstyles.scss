@@ -1,0 +1,81 @@
+.waiting-room{
+  padding: 30px 6px;
+  background: #EDB72B;
+  width:586px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+  &__game-pretitle{
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #5A5A5A;
+    margin-bottom: 12px;
+  }
+
+  &__title{
+    font-family: 'Colus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  &__number-of-players{
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #5A5A5A;
+    margin-bottom: 25px;
+  }
+  &__number-of-players-current{
+    color:#000;
+  }
+
+  &__players{
+    margin-bottom: 36px;
+  }
+
+  &__player{
+    display: flex;
+    flex-direction: column;
+
+    p{
+      font-size: 10px;
+      line-height: 13px;
+      letter-spacing: 0.03em;
+      color: #000000;
+      text-align: center;
+    }
+  }
+
+  &__player-image{
+    border-radius: 100%;
+  }
+
+  button{
+    background: #51DA7F;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 73px;
+    padding: 19px 47px;
+    margin: 0 auto;
+    font-family: 'Colus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #030405;
+
+    &:hover{
+      background-color: #6fe696;
+      cursor: pointer;
+    }
+  }
+
+}

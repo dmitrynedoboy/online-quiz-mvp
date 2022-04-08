@@ -1,0 +1,21 @@
+.stat{
+  h2{
+    margin: 0 0 20px 0;
+  }
+
+  &__user{
+    display: flex;
+    gap:15px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__img{
+    img{
+      width: 29px;
+      height: 29px;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+  }
+}

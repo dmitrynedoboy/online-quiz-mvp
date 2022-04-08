@@ -1,0 +1,76 @@
+.profile{
+  border: 2px solid #000;
+  margin: 0 auto;
+  width: 900px;
+  max-width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+
+  &_login, &_email{
+    input{
+      padding: 9px 15px;
+      margin-top: 12px;
+      background: #FFFFFF;
+      border-radius: 23px;
+      width: 100%;
+      border: none;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.03em;
+      color: #5A5A5A;
+      box-sizing: border-box;
+      margin-bottom: 25px;
+      
+  
+      &:focus{
+        outline: none;
+        border: none;
+      }
+    }
+  }
+
+  &__avatar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    gap:40px;
+  }
+
+  &__avatar-left{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    img{
+      width: 112px;
+      height: 112px;
+      max-width: 100%;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__button{
+    background: #51DA7F;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 73px;
+    padding: 19px 47px;
+    font-family: 'Colus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #030405;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+
+    &:hover{
+      background-color: #6fe696;
+      cursor: pointer;
+    }
+  }
+}

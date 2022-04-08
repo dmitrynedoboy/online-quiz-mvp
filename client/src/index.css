@@ -1,0 +1,262 @@
+body {
+	margin: 0;
+	font-family: 'Mulish', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #f8ceee;
+}
+
+@font-face {
+	font-family: "Colus";
+	src: url(../public/fonts/Colusregular.ttf);
+}
+
+@font-face {
+	font-family: "Mulish";
+	src: url(../public/fonts/Mulish-Regular.ttf);
+}
+
+a {
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+	color: #000000;
+}
+
+.sign-up .error1,
+.sign-in .error1 {
+	padding: 20px;
+}
+
+h1 {
+	font-family: 'Colus';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 35px;
+	/* identical to box height */
+	letter-spacing: 0.04em;
+	color: #000000;
+	text-align: center;
+	margin-bottom: 42px;
+}
+
+a:hover {
+	color: #000;
+}
+
+li {
+	list-style: none;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.container__home {
+	background: url(../public/images/bg.png) no-repeat center center;
+	background-size: 115% 112%;
+	margin-bottom: 0;
+	position: relative;
+}
+
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+	padding: 21px 0;
+	background: #ffffff;
+	border-bottom: 2px solid #000;
+}
+
+main {
+	flex: 1 1 auto;
+	margin-bottom: 30px;
+	padding: 63px 0;
+}
+
+@media (max-width: 1200px) {
+	main,
+	footer {
+		padding: 21px 10px;
+		box-sizing: border-box;
+	}
+}
+
+footer {
+	border-top: 2px solid #000;
+	flex: 0 0 auto;
+	padding: 21px 0;
+}
+
+footer .container {
+	padding: 0 10px;
+}
+
+.games-main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+.game-card {
+	width: 357px;
+	max-width: 100%;
+	display: flex;
+	background-color: #ccc;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 0;
+}
+
+.game-card__img {
+	width: 153px;
+	height: 153px;
+	border-radius: 100%;
+	object-fit: cover;
+	margin: 0 auto;
+	display: block;
+}
+
+.game-card__title {
+	font-family: 'Colus';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 29px;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	text-align: center;
+}
+
+.games-title {
+	margin-bottom: 90px;
+	text-align: center;
+	font-family: 'Colus';
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 35px;
+	letter-spacing: 0.04em;
+	color: #000000;
+}
+
+.game-card:nth-child(2n) {
+	background-color: #edb72b;
+}
+
+.game-card:nth-child(2n + 1) {
+	background-color: #51da7f;
+}
+
+.header-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-logo {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: 0.03em;
+	color: #000000;
+	font-family: 'Colus';
+}
+
+.waiting-room {
+	padding: 30px;
+	background-color: rgb(233, 233, 233);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.waiting-room__topic-pretitle,
+.waiting-room__game-pretitle,
+.waiting-room__author-pretitle {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.waiting-room__topic-title,
+.waiting-room__game-title,
+.waiting-room__author-title {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.waiting-room__players {
+	display: flex;
+	gap: 20px;
+}
+
+.cl-btn-2 {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+}
+.cl-btn-2 div {
+	cursor: pointer;
+	position: relative;
+	height: 40px;
+	width: 50px;
+}
+.cl-btn-2 .leftright {
+	height: 2px;
+	width: 14px;
+	position: absolute;
+	margin-top: 24px;
+	background-color: #000;
+	border-radius: 2px;
+	transform: rotate(45deg);
+	transition: all .3s ease-in;
+}
+.cl-btn-2 .rightleft {
+	height: 2px;
+	width: 14px;
+	position: absolute;
+	margin-top: 24px;
+	background-color: #000;
+	border-radius: 2px;
+	transform: rotate(-45deg);
+	transition: all .3s ease-in;
+}
+.cl-btn-2 .close-btn {
+	margin: 44px 0 0 -14px;
+	position: absolute;
+	color: #000;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: all .3s ease-in;
+	opacity: 0;
+}
+.cl-btn-2 div:hover .leftright {
+	transform: rotate(-45deg);
+}
+.cl-btn-2 div:hover .rightleft {
+	transform: rotate(45deg);
+}
+.cl-btn-2 div:hover .close-btn {
+	opacity: 1;
+}
+
+.waiting-room__close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+}

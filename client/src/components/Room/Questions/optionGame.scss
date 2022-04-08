@@ -1,0 +1,97 @@
+
+.radio{
+  margin-bottom: 20px;
+  &__btn{
+    display: inline-block;
+    margin-right: 10px;
+
+    input[type=radio] {
+      display: none;
+    }
+
+    label {
+      display: flex;
+      gap:20px;
+      cursor: pointer;
+      padding: 0px 15px;
+      line-height: 34px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 6px;
+      user-select: none;
+      background-color: #fff;
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.03em;
+      color: #000000;
+      padding: 13px 24px;
+    }
+
+    label:hover {
+      color: #666;
+    }
+
+    input[type=radio]:checked + label {
+      background: #ffe0a6;
+    }
+
+    input[type=radio]:disabled + label {
+      background: #efefef;
+      color: #666;
+    }
+    
+  }
+}
+
+.option-game{
+  &__question-title{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #5A5A5A;
+    margin-bottom: 12px;
+  }
+  &__question{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-bottom: 25px;
+  }
+  &__image img{
+    width: 700px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    display: block;
+  }
+  &__timer-title{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #5A5A5A;
+    margin-right: 20px;
+  }
+
+  &__timer-time{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    font-size: 25px;
+  }
+}

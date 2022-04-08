@@ -1,0 +1,44 @@
+.final-stats{
+  width: 900px;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid #000;
+  box-sizing: border-box;
+
+  h3{
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  &__players{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 7px;
+    border-bottom: 1px solid rgb(78, 76, 76);
+  }
+
+  &__player-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__player-first{
+    color:rgb(64, 119, 63);
+    font-size: 24px;
+  }
+
+  &__player-second {
+    color:rgb(240, 137, 20);
+    font-size: 20px;
+  }
+  &__player-third{
+    color: rgb(90, 128, 235);
+    font-size: 16px;
+  }
+}
